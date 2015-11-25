@@ -1,0 +1,234 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+      <link rel="stylesheet" href="css/motion-ui.css" />
+  </head>
+  <body>
+      
+<div class="stars">
+    </div>
+ 
+<div class="space"></div>
+     
+
+      
+      
+      <p class="nextplanet"><a data-open="exampleModal1"><img src="img/mars.png"></a></p>
+
+<div class="reveal" id="exampleModal1" data-reveal>
+  <h2>Goals - next planet</h2>
+  <p class="lead" id='next'>The current goals: *Goals etc </p>
+  <a class='button' data-open='exampleModal11'>Edit</a>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class='reveal' id='exampleModal11' data-reveal>
+    
+  <h2>Goals - next planet</h2>
+    <input type="text" id="inp">You can enter your goals here
+    <button a data-open="exampleModal1">Go back</a></button>
+    <button onclick="changegoal();">OK</button>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+      
+
+
+      
+  
+    
+    
+      
+      <p class="preplanet"><a data-open="exampleModal2"><img src="img/moon.png"></a></p>
+
+<div class="reveal" id="exampleModal2" data-reveal>
+  <h2>Reached goals</h2>
+  <p class="lead" id='pre'>Reached goals : *Goals etc</p>
+  <a class='button' data-open='exampleModal22'>Edit</a>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class='reveal' id='exampleModal22' data-reveal>
+    
+  <h2>Reached goals</h2>
+    <input type="text" id="inp2">You can enter reached goals here
+    <button a data-open="exampleModal2">Go back</a></button>
+    <button onclick="changegoal2();">OK</button>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+     
+      
+
+      
+      
+      <p class="asis"><a data-open="exampleModal3"><img src="img/earth.png"></a></p>
+
+<div class="reveal" id="exampleModal3" data-reveal>
+  <h2>The start of the journey</h2>
+  <p class="lead" id='asi'>This is where we started: Etc. etc. </p>
+  <a class='button' data-open='exampleModal33'>Edit</a>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class='reveal' id='exampleModal33' data-reveal>
+    
+  <h2>The start of the journey</h2>
+    <input type="text" id="inp3">You can enter the start of the journey here
+    <button a data-open="exampleModal3">Go back</a></button>
+    <button onclick="changegoal3();">OK</button>
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+     
+    <!--    <div class="nextplanet" onclick="nextplanet();">
+     <img src="img/nextplanet.png">           
+       --> 
+        
+    </div>
+
+<div id="container">
+  <div class="dot"></div>
+  <div class="pulse"></div>
+</div>
+
+
+    
+      <div class="raket" onclick="raket();">
+     <img src="img/rocket1.png">           
+                
+        
+        
+    </div>
+      
+      
+ 
+      <div class="saturn">
+     <img src="img/saturn.png">           
+                
+        
+        
+    </div>
+      
+      
+       <div class="awesome" onclick="awesome();">
+     <img src="img/awesome.png">           
+        
+        
+    </div>
+      
+<div class="alien2">
+<img src="img/alien3.png"></div>
+    
+    
+         
+    <footer class="row">
+    
+    <div class="medium-2 columns" id="cv1">
+    Core Value 1
+    </div>
+    
+    <div class="medium-2 columns" id="cv2">
+    Core Value 2
+    </div>
+    
+    <div class="medium-2 columns" id="cv3">
+    Core Value 3
+    </div>
+    
+    <div class="medium-2 columns" id="cv4">
+    Core Value 4
+    </div>
+    
+        <div class="medium-2 columns" id="cv5">
+   <a data-open="exampleModal4"><button>Change core values</button></a>
+    </div>
+    </footer>
+   
+        
+     
+      
+
+<div class="reveal" id="exampleModal4" data-reveal>
+  <h2>Core values</h2>
+  <p class="lead">Here you can change core values</p>
+     <input type="text" id="value1">
+     <input type="text" id="value2">
+     <input type="text" id="value3">
+     <input type="text" id="value4">
+  <a class='button' onclick="changecore();" data-close aria-label="Close reveal" >Save</a>
+ 
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+    
+      
+
+    <script src="js/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+<script src="js/foundation.reveal.js"></script>
+<script src="js/foundation.util.box.js"> </script>
+<script src="js/foundation.util.triggers.js"> </script>
+<script src="js/foundation.util.mediaQuery.js"> </script>
+<script src="js/foundation.util.motion.js"> </script>
+<script src="js/motion-ui.js"> </script>
+<script src="js/foundation.interchange.js"> </script>
+
+    <script>
+      $(document).foundation();
+        
+                function changecore()  {
+               
+    var userinput1= document.getElementById('value1').value;
+    var userinput2= document.getElementById('value2').value;
+    var userinput3= document.getElementById('value3').value;
+    var userinput4= document.getElementById('value4').value;
+    
+        document.getElementById('cv1').innerHTML = userinput1;
+        document.getElementById('cv2').innerHTML = userinput2;
+        document.getElementById('cv3').innerHTML = userinput3;
+        document.getElementById('cv4').innerHTML = userinput4;
+
+}      
+   
+        
+    
+         
+        
+        function changegoal()  {
+    var userinput= document.getElementById('inp').value;
+    
+    document.getElementById('next').innerHTML = userinput;
+            alert('You have changed goals to the nextplanet');
+
+}    
+          
+        function changegoal2()  {
+    var userinput= document.getElementById('inp2').value;
+    
+    document.getElementById('pre').innerHTML = userinput;
+             alert('You have changed where we came from');
+} 
+            
+         function changegoal3()  {
+    var userinput= document.getElementById('inp3').value;
+    
+    document.getElementById('asi').innerHTML = userinput;
+              alert('You have changed the start of the journey');
+}    
+  
+    </script>
+  </body>
+</html>
